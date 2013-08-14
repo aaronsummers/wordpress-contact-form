@@ -69,7 +69,8 @@
 	?>
 	
 	
-<style> //Include some styles add to your header or css
+<style> 
+/* Include some styles add to your header or css */
 #contact-form {
   width: 100%;
 }
@@ -106,12 +107,12 @@
       <!-- Now for the form section -->
               <div id="contact-form">
                 <?php echo $response; ?>
-                <form action="#contact-form" method="post">// Refreshes the page to the #contact-form id on submit
-                  <div class="left">// Used for positioning
+                <form action="#contact-form" method="post"><!-- Refreshes the page to the #contact-form id on submit -->
+                  <div class="left"><!-- Used for positioning -->
                   <p><label for="name">Name: <span>*</span> <br><input type="text" name="message_name" value="<?php echo $_POST['message_name']; ?>"></label></p>
                   <p><label for="message_email">Email: <span>*</span> <br><input type="text" name="message_email" value="<?php echo $_POST['message_email']; ?>"></label></p>
                   </div>
-                  <div class="right">// Used for positioning
+                  <div class="right"><!-- Used for positioning -->
                   <p><label for="message_text">Message: <span>*</span> <br><textarea type="text" name="message_text"><?php echo $_POST['message_text']; ?></textarea></label></p>
                   </div>
                   <p><input type="checkbox" name="sendCopy" id="sendCopy" value="true"<?php if(isset($_POST['sendCopy']) && $_POST['sendCopy'] == true) echo ' checked="checked"'; ?> /><label for="sendCopy">Send a copy of this email to yourself</label></p>
@@ -119,4 +120,4 @@
                   <input type="hidden" name="submitted" value="1">
                   <p><input type="submit"></p>
                 </form>
-              </div> <!-- /#respond -->
+              </div> <!-- /#contact-form
